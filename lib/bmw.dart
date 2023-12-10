@@ -123,10 +123,12 @@ class Bmw extends StatelessWidget {
                                       ),
                                     ],
                                   ),
-                                  Expanded(
-                                      flex: 1,
-                                      child: Image.asset(
-                                        'assets/images/car.png',width: 70,height: 70,)),
+                                  SizedBox(width: 100,
+                                    child: Expanded(
+                                        flex: 1,
+                                        child: Image.asset(
+                                          'assets/images/car.png',width: 70,height: 70,)),
+                                  ),
                                 ],
                               ),
                             ),

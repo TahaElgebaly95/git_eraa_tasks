@@ -9,7 +9,7 @@ import 'buttns.dart';
 
 void main() {
   runApp(MaterialApp(debugShowCheckedModeBanner: false,
-    home: Bmw()
+    home: LastOne()
   ));
 }
 

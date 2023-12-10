@@ -85,7 +85,8 @@ class LastOne extends StatelessWidget {
                      shrinkWrap: true,
                      scrollDirection: Axis.horizontal,
                      itemBuilder: (context, index) {
-                   return Column(crossAxisAlignment: CrossAxisAlignment.start,
+                   return Column(
+                     crossAxisAlignment: CrossAxisAlignment.start,
                      children: [
                        Container(
                          clipBehavior: Clip.antiAliasWithSaveLayer,
@@ -128,14 +129,24 @@ class LastOne extends StatelessWidget {
                     ),
                     Padding(
                       padding: const EdgeInsets.all(15),
-                      child: Column(
+                      child: Column( mainAxisAlignment: MainAxisAlignment.start,
                         children: [
                           Text('Gebaly',style: TextStyle(fontSize: 16,color: Colors.white,fontWeight: FontWeight.normal),),
                           SizedBox(height: 2,),
                           Text('Gebaly',style: TextStyle(fontSize: 16,color: Colors.white,fontWeight: FontWeight.normal),),
+
                         ],
                       ),
                     ),
+                   SizedBox(width: 15,),
+                   // مشكلة الوقت
+                    Expanded(
+                      child: Row(mainAxisAlignment: MainAxisAlignment.end,
+                        children: [
+                          Text('11:37',style: TextStyle(fontSize: 14,color: Colors.grey,fontWeight: FontWeight.normal),),
+                        ],
+                      ),
+                    )
                   ],
                 );
               }, separatorBuilder: (context, index) {return Divider();
